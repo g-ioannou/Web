@@ -12,5 +12,5 @@ Repository που θα περιέχει διάφορα τμήματα κώδικ
 -->Γράφω το scriptακι της php\
 -->Μπαίνω browser, πατάω localhost στο address bar.\
 -->Ο φάκελος του workspace πρέπει να βρίσκεται εκεί που λέει Your Projects\
--->Για να τρέξω το script πηγαίνω στο address bar και γράφω localhost/YOUR_WORKSPACE_NAME/PHPFILENAME.php\
+-->Για να τρέξω το script πηγαίνω στο address bar και γράφω localhost/YOUR_WORKSPACE_NAME/PHPFILENAME.php
 
