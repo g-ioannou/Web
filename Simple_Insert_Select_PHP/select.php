@@ -15,7 +15,7 @@
     if($resultCheck > 0){
         echo "<br> USERS IN DATABASE: <br>";
         while($row = mysqli_fetch_assoc($result)){
-                echo $row['username'] . "<br>";
+                echo $row['username'] . "<br>"; //change 'username' to your column name
          }
     }else {
         echo "Database has no users yet";
