@@ -1,9 +1,9 @@
 # Web
-
 GitHub Short Tutorial: https://www.youtube.com/watch?v=0fKg7e37bQE&ab_channel=LearnCode.academy
 
-26/11/2020
 Repository που θα περιέχει διάφορα τμήματα κώδικα και το γενικό project.
+# Ανέβασμα αρχείων
+Ανεβάστε τα αρχεία με αντιπροσωπευτικά ονόματα σε φακέλους για να μη γίνει χαμούλης και χαθούμε.
 
 # Σύνδεση php στον wampserver
 -->Ανοίγω wamp να τρέχει πράσινο.\
