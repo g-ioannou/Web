@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB</title>
+<meta charset="utf=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+   <link rel="stylesheet" href="style.css"> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <input type="file" id="real-file" hidden="hidden" />
+    
+    <button type="button" id="custom-button">CHOOSE A FILE</button>
+    
+    <button type="button" id="save-button" >SAVE</button>
+    
+    <span id="custom-text">No file chosen, yet.</span>
+
+    <script src="test.js"></script>
+
+</body> 
+
+
+</html>
+
+
+.
+.
+.
+.
+
+<Javascript>
+
+
+
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text"); 
+document.getElementById("save-button").addEventListener('click',exportJson);
+
+customBtn.addEventListener("click", function() {
+  realFileBtn.click();
+});
+ var reg= /[\/\\]([\w\d\s\.\-\(\)]+)$/;
+ var a=[];
+ var fileName;
+ var save_data =[];
+
+ realFileBtn.addEventListener("change", function() {
+   
+    if (realFileBtn.value)
+     {
+      customTxt.innerHTML = realFileBtn.value.match(reg)[1];
+      fileName= realFileBtn.value.match(reg)[1];
+      
+     }
+    
+    else 
+    {
+        customTxt.innerHTML = "No file chosen, yet.";
+    }
+    
+    fetch(fileName)
+    .then(res => res.json()) 
+    .then(data=> {
+      
+      a.push(data);
+      console.log(a);
+
+    })
+
+});
+
+
+function exportJson(){
+ 
+  save_data = a;
+  console.log(save_data);
+
+  var fileName1 = fileName;
+
+  // Create a blob of the data
+  var fileToSave = new Blob([JSON.stringify(save_data)], {
+      type: 'application/json',
+      name: fileName1
+  });
+
+  // Save the file
+  saveAs(fileToSave, fileName1);
+
+
+}
