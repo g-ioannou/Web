@@ -5,8 +5,9 @@ Repository που θα περιέχει διάφορα τμήματα κώδικ
 # Ανέβασμα αρχείων
 Ανεβάστε τα αρχεία με αντιπροσωπευτικά ονόματα σε φακέλους για να μη γίνει χαμούλης και χαθούμε.
 
-# Install jQuery
-https://www.youtube.com/watch?v=7hduZL1q-KM&ab_channel=LinkedInLearning
+# Include jQuery
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 # Σύνδεση php στον wampserver
 -->Ανοίγω wamp να τρέχει πράσινο.\
